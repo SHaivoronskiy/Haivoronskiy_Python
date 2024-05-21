@@ -12,7 +12,10 @@ def is_valid_bracket_sequence(sequence):
 
     return not stack
 
-sequence = "[((())()(())]]" #[(())()(())]
+#[((())()(())]] incorrect
+#[(())()(())] correct
+
+sequence = input("Enter brackets sequence: ")
 is_valid = is_valid_bracket_sequence(sequence)
 print("Is the sequence correct?", is_valid)
 
